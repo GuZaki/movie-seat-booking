@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Выбор места в кинотеатре</title>
+</head>
+<body>
+    <div class="movie-container">
+        <label>Выберите сеанс:</label>
+        <select class="movie">
+            <option value="100">Сеанс 10:00 (100 руб.)</option>
+            <option value="150">Сеанс 13:00 (150 руб.)</option>
+            <option value="200">Сеанс 16:00 (200 руб.)</option>
+            <option value="250">Сеанс 19:00 (250 руб.)</option>
+        </select>
+    </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small class="small">Свободно</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small class="small">Выбрано</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small class="small">Занято</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+    
+        <div class="row"> <!-- 1 ряд -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row"><!-- 2 ряд -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row"><!-- 3 ряд -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row"><!-- 4 ряд -->
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row"><!-- 5 ряд -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row"><!-- 6 ряд -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+    </div>
+    
+    <p class="text">Вы выбрали <span id="count">0 </span><span class="text-span"> мест</span> на общую сумму <span id="total">0</span> руб.</p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
